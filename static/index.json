@@ -1,0 +1,136 @@
+{
+  "ret": true,
+  "data": {
+    "city": "上海",
+    "slider": [{
+      "id": "0001",
+      "link": "",
+      "imgURl": "https://imgs.qunarzz.com/piao/fusion/1804/bd/8e4a1c3f470d3702.jpg_750x200_f1f0a8c7.jpg"
+    },{
+      "id": "0002",
+      "imgURl": "https://imgs.qunarzz.com/piao/fusion/1808/8a/1957a0fb58ad0402.jpg_750x200_e72b8c0f.jpg",
+      "link": ""
+  },{
+      "id": "0003",   
+      "imgURl": "https://imgs.qunarzz.com/piao/fusion/1808/ad/1d2e0030d4ff7302.jpg_750x200_bf5a325d.jpg",
+      "link": ""
+  }],
+  "icons": [{
+        "id": 1,
+        "imgURL": "https://imgs.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "title": "景点门票"
+
+    },{
+        "id": 2,
+        "imgURL": "https://imgs.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+        "title": "北京必游"
+    },{
+        "id": 3,   
+        "imgURL": "https://imgs.qunarzz.com/piao/fusion/1803/6a/45f595250c73d102.png",
+        "title": "夏日玩水"       
+    },{
+        "id": 4,
+        "imgURL": "https://imgs.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png",
+        "title": "文化古迹"          
+    },{
+        "id": 5,   
+        "imgURL": "https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+        "title": "动物植园"         
+    },{
+        "id": 7,   
+        "imgURL": "https://imgs.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png",
+        "title": "故宫"        
+    },{
+        "id": 8,   
+        "imgURL": "https://imgs.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+        "title": "一日游"        
+    },{
+        "id": 9,   
+        "imgURL": "https://imgs.qunarzz.com/piao/fusion/1808/8d/747c9a29b8dba402.png",
+        "title": "国家宝藏"         
+    },{
+        "id": 10,   
+        "imgURL": "https://source.qunarzz.com/visa/flag/USA.gif",
+        "title": "一日游"            
+    },{
+        "id": 11,   
+        "imgURL": "https://source.qunarzz.com/visa/flag/USA.gif",
+        "title": "一日游"       
+    },{
+        "id": 12,   
+        "imgURL": "https://source.qunarzz.com/visa/flag/USA.gif",
+        "title": "一日游"       
+    },{
+        "id": 13,   
+        "imgURL": "https://source.qunarzz.com/visa/flag/USA.gif",
+        "title": "一日游"        
+    },{
+        "id": 14,   
+        "imgURL": "https://source.qunarzz.com/visa/flag/USA.gif",
+        "title": "一日游"      
+    },{
+        "id": 15,   
+        "imgURL": "https://source.qunarzz.com/visa/flag/USA.gif",
+        "title": "一日游"         
+    },{
+        "id": 16,   
+        "imgURL": "https://source.qunarzz.com/visa/flag/USA.gif",
+        "title": "一日游"          
+    }],
+    "sight": [{
+        "id": "001",
+        "imgurl": "https://imgs.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg",
+        "title": "故宫",
+        "desc": "东方宫殿建筑代表,世界宫殿建筑典范",
+        "price": "20"
+        },{
+        "id": "002",
+        "imgurl": "https://imgs.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg",
+        "title": "故宫",
+        "desc": "东方宫殿建筑代表,世界宫殿建筑典范",
+        "price": "20"
+      },{
+        "id": "003",
+        "imgurl": "https://imgs.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg",
+        "title": "故宫",
+        "desc": "东方宫殿建筑代表,世界宫殿建筑典范",
+        "price": "20"
+      },{
+        "id": "004",
+        "imgurl": "https://imgs.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg",
+        "title": "故宫",
+        "desc": "东方宫殿建筑代表,世界宫殿建筑典范",
+        "price": "20"
+      },{
+        "id": "005",
+        "imgurl": "https://imgs.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg",
+        "title": "故宫",
+        "desc": "东方宫殿建筑代表,世界宫殿建筑典范",
+        "price": "20"
+      },{
+        "id": "006",
+        "imgurl": "https://imgs.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg",
+        "title": "故宫",
+        "desc": "东方宫殿建筑代表,世界宫殿建筑典范",
+        "price": "20"
+      },{
+        "id": "007",
+        "imgurl": "https://imgs.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg",
+        "title": "故宫",
+        "desc": "东方宫殿建筑代表,世界宫殿建筑典范",
+        "price": "20"
+      },{
+        "id": "008",
+        "imgurl": "https://imgs.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg",
+        "title": "故宫",
+        "desc": "东方宫殿建筑代表,世界宫殿建筑典范",
+        "price": "20"
+      },{
+        "id": "009",
+        "imgurl": "https://imgs.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg",
+        "title": "故宫",
+        "desc": "东方宫殿建筑代表,世界宫殿建筑典范",
+        "price": "20"
+      }]
+  }
+}
