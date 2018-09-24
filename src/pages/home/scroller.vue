@@ -5,7 +5,7 @@
         <div v-show="isLoading" class="loading">正在加载...</div>
       </transition>
       
-      <div class="item" v-for="item in list" :key="item.id">
+      <router-link class="item" v-for="item in list" :key="item.id" :to=" '/detail/' + item.id" tag="div">
         <img v-lazy ="item.imgurl" alt="" class="item-img"/>
         <div class="item-content">
           <p class="item-title">{{item.title}}</p>
@@ -15,7 +15,7 @@
             {{item.price}}
             <span class="item-start">起</span></p>
         </div>
-      </div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -41,6 +41,7 @@ export default {
       isLoading: false,
       moreSights: [],
       pageNum: 1,
+      isFetching: false,
     }
   },
   computed: {
@@ -56,8 +57,8 @@ export default {
       })
     },
     bindEvents () {
-      this.scroller.on('scroll', this.handleScroll.bind(this));
-      this.scroller.on('scrollEnd', this.handleScrollEnd.bind(this))
+      this.scroller.on('scroll', this.handleScroll.bind(this)); //屏幕滚动的时候
+      this.scroller.on('scrollEnd', this.handleScrollEnd.bind(this))  //滚动结束的时候
 
     },
     handleScroll (e) {
@@ -70,17 +71,23 @@ export default {
       this.isLoading = false;
     },
     getListInfo () { 
-      axios.get('/api/sightlist.json?city=' + this.city + `&page=`+ this.pageNum)
+      if( !isFetching ) {
+        this.isFetching = true
+        axios.get('/api/sightlist.json?city=' + this.city + `&page=`+ this.pageNum)
         .then(this.handleGetListSucc.bind(this))
-        .catch(this.handleGetListErr.bind(this))
+        .catch(this.handleGetListErr.bind(this))   
+      }
+      
     },
     handleGetListSucc (res) {
 
       res&& (res = res.data);
       res.data&&res.data.list&& (this.moreSights = this.moreSights.concat(res.data.list) );
       this.pageNum ++;
+      this.isFetching = fasle; 
     },
     handleGetListErr () {
+      this.isFetching = fasle;
       console.log('scroll err')
     }
   },

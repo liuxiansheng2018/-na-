@@ -4,6 +4,7 @@
       <index-swiper :sliders="sliders"></index-swiper>
       <index-icons :icons="icons"></index-icons>
       <index-scroller class="scroller" :sights="sights"></index-scroller>
+      <download v-show="download" @close="handleDownload">下载条</download>
     </div>
 </template>
 
@@ -14,24 +15,34 @@ import IndexIcons from './icons'
 import IndexScroller from './scroller'
 import axios from 'axios';
 import { mapState,mapMutations } from 'vuex';
+//import mixin from "@/mixin/download.js";
+import Download from "./download";
 export default {
   name: 'index',
+ // mixins: [mixin],
   data () {
     return {
       sliders: [],
       icons: [],
-      sights: []
+      sights: [],
+      download: true
     }
   },
   components: {
     IndexHeader,
     IndexSwiper,
     IndexIcons,
-    IndexScroller
+    IndexScroller,
+    Download
   },
   computed: {
     ...mapState(["city"])
   },  
+  watch: {  
+    city () {
+      this.getIndexData()
+    }
+  },
   methods: {
     ...mapMutations(["changeCity"]),
     getIndexData () {
@@ -53,6 +64,9 @@ export default {
     },
     handleDataErr () {
       console.log("error")
+    },
+    handleDownload () {
+      this.download = false;
     }
   },
   mounted () {
